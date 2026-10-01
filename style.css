@@ -1,7 +1,7 @@
 /* ===== JMAX — tokens (edit colours / hero image here) ===== */
 :root{
   --black:#050505; --char:#111111; --char2:#1A1A1A; --gold:#D4AF37; --white:#F5F5F5; --gray:#999999;
-  --hero-image:url("/images/theatre-interior.jpg");
+  --hero-image:url("images/theatre-interior.jpg");
   --serif:"Cormorant Garamond",Georgia,serif; --sans:"Manrope",system-ui,sans-serif;
   --nav-h:68px;
 }
