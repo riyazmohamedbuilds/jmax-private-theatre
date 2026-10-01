@@ -4,7 +4,9 @@ const WHATSAPP_NUMBER = "919489561162";
 
 const $ = (s, c = document) => c.querySelector(s);
 const $$ = (s, c = document) => [...c.querySelectorAll(s)];
-const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const reduce =
+  matchMedia("(prefers-reduced-motion: reduce)").matches ||
+  matchMedia("(max-width: 768px)").matches;
 
 /* Navbar: darken on scroll, mobile menu */
 const nav = $("#nav"), burger = $("#burger"), menu = $("#menu");

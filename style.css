@@ -205,3 +205,23 @@ address{font-style:normal;color:#cfcfcf;max-width:46ch;margin:0 auto 1rem}
   html{scroll-behavior:auto}
   .reveal,.reveal-img,.hero__in>*{opacity:1;transform:none;clip-path:none}
 }
+/* ===== Android / Mobile rendering fix ===== */
+
+@media (max-width: 768px) {
+  /* Never allow reveal animations to hide content on mobile */
+  .reveal,
+  .reveal-img {
+    opacity: 1 !important;
+    transform: none !important;
+    clip-path: none !important;
+  }
+
+  /* Prevent parallax transforms from causing mobile layout issues */
+  [data-parallax] {
+    transform: none !important;
+  }
+
+  .parallax-wrap img {
+    transform: none !important;
+  }
+}
