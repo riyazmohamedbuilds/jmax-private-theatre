@@ -225,3 +225,16 @@ address{font-style:normal;color:#cfcfcf;max-width:46ch;margin:0 auto 1rem}
     transform: none !important;
   }
 }
+/* Contact buttons - make Instagram match Call & WhatsApp */
+.contact-buttons .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.contact-buttons .btn svg {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
